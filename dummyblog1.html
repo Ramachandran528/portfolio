@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy Blog 1</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Loops in js</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
     <header>
@@ -12,20 +13,79 @@
             <a style="text-decoration: none;" href="index.html"><h3 class="heading">ramachandran</h3></a>
             <ul class="inline-list navigation">
                 <li class="inline-list "><a class="link nav-link" href="index.html">home</a></li>
-                <li class="inline-list "><a class="link nav-link active" href="projects.html">projects</a></li>
-                <li class="inline-list "><a class="link nav-link" href="blog.html">blogs</a></li>
+                <li class="inline-list "><a class="link nav-link " href="projects.html">projects</a></li>
+                <li class="inline-list "><a class="link nav-link active" href="blog.html">blogs</a></li>
             </ul>
         </nav>   
     </header>
-    <main class="container-center">
-    <h1>Dummy Blog 1</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis perspiciatis, aut aperiam placeat ipsam laudantium necessitatibus beatae eveniet alias quia cum reiciendis tempora blanditiis debitis illo veritatis dolor assumenda delectus quasi natus. Deleniti ipsa sunt iusto dolore vel? Sint soluta nulla mollitia quia aliquam eaque quos fugit corporis voluptate.</p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel aliquid rerum consectetur doloremque dolor animi repellendus adipisci incidunt obcaecati, ratione voluptatibus suscipit, fugit quam consequatur. Corporis odio quis placeat dolor, ipsa, nesciunt numquam ducimus provident fugit cumque adipisci, natus dolores distinctio quod error qui vitae a quos quisquam cum?
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis iusto odit tempora, molestiae, rem optio temporibus eum numquam quisquam maxime nobis accusamus, atque totam et nemo. Laborum quo autem voluptatem? Ducimus possimus sit, voluptas odit numquam maxime debitis odio nemo ipsam provident excepturi at. Repellendus corrupti id recusandae ipsa iure?
-    </p>
+    <main>
+    <div class="blog-container-center">
+    <h1 class="blog-heading">Loops in Javascript</h1>
+    <p class="blog-author">Author:RamaChandran</p>
+    <section>
+    <h2 class="blog-sub-heading">What is a loop?</h2>
+    <p class="blog-content">When you want to execute a block of code for "n"  number of times then you use loops. There are mainly two types of loop <b>Entry controlled loop</b> and <b>Exit Controlled loop</b>.</p>
+    </section>
+    <img src="images/blog-hero-image.jpg" class="blog-image" alt="" width="200">
+    <section>
+        <h2 class="blog-sub-heading">Entry controlled Loop</h2>
+        <p class="blog-content">When you check the condition at the beginning of the loop then it is called an entry controlled loop. For and while loop comes under Entry controlled loop.</p>
+    </section>
+    <section>
+        <h2 class="blog-sub-heading">Exit Controlled loop</h2>
+        <p class="blog-content">When you check the condition at the beginning of the loop then it is called an exit controlled loop. Do while loop comes under Exit controlled loop.</p>
+    </section>
+    <section>
+        <h2 class="blog-sub-heading">For Loop</h2>
+        <p class="blog-content">It is an entry controlled loop. Here initialization, test condition, and increment (or) decrement will be done on a single line. The loop will be executed until the condition is true.</p>
+        <div class="blog-syntax-container">
+            <h3 class="blog-topics">Syntax</h3>
+            <code>
+                for(intialization;test condition;increment/decrement){<br>
+                    //block of code <br>
+                  }                  
+            </code>
+        </div>
+        <div class="blog-example-image-container">
+        <h3 class="blog-topics">Eg:</h3>
+        <img src="images/for-loop-example.png" alt="" class="blog-example-image">
+        </div>
+    </section>
+    <section>
+        <h2 class="blog-sub-heading">while loop</h2>
+        <p class="blog-content">	It is an entry controlled loop. Here initialization, test condition, and increment (or) decrement should be done separately. The loop will be executed until the condition is true.</p>
+        <div class="blog-syntax-container">
+            <h3 class="blog-topics">Syntax</h3>
+            <code>
+                while(condition) <br>
+                { <br>
+                    //block of code <br>
+                }
+            </code>
+        </div>
+        <div class="blog-example-image-container">
+        <h3 class="blog-topics">Eg:</h3>
+        <img src="images/while-loop-example.png" alt="" class="blog-example-image">
+        </div>
+    </section>
+    <section>
+        <h2 class="blog-sub-heading">do...while loop</h2>
+        <p class="blog-content">	It is an exit controlled loop. Here initialization, test condition, and increment (or) decrement will be done separately. The loop will be executed at least once even though the condition is true. It is mainly menu-based CLI app</p>
+        <div class="blog-syntax-container">
+            <h3 class="blog-topics">Syntax</h3>
+            <code>
+                do <br>
+                { <br>
+                    //block of code <br>
+                }while(condition);
+            </code>
+        </div>
+        <div class="blog-example-image-container">
+        <h3 class="blog-topics">Eg:</h3>
+        <img src="images/do-while-loop-example.png" alt="" class="blog-example-image">
+        </div>
+    </section>
+    </div>
     </main>
     <footer class="footer">
         <h3 class="heading">Social media links</h3>
