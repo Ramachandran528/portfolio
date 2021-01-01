@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dummy Blog 2</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/blog.css">
 </head>
 <body>
     <header>
@@ -17,16 +18,65 @@
             </ul>
         </nav>   
     </header>
-    <main class="container-center">
-    <h1>Dummy Blog 2</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis perspiciatis, aut aperiam placeat ipsam laudantium necessitatibus beatae eveniet alias quia cum reiciendis tempora blanditiis debitis illo veritatis dolor assumenda delectus quasi natus. Deleniti ipsa sunt iusto dolore vel? Sint soluta nulla mollitia quia aliquam eaque quos fugit corporis voluptate.</p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vel aliquid rerum consectetur doloremque dolor animi repellendus adipisci incidunt obcaecati, ratione voluptatibus suscipit, fugit quam consequatur. Corporis odio quis placeat dolor, ipsa, nesciunt numquam ducimus provident fugit cumque adipisci, natus dolores distinctio quod error qui vitae a quos quisquam cum?
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis iusto odit tempora, molestiae, rem optio temporibus eum numquam quisquam maxime nobis accusamus, atque totam et nemo. Laborum quo autem voluptatem? Ducimus possimus sit, voluptas odit numquam maxime debitis odio nemo ipsam provident excepturi at. Repellendus corrupti id recusandae ipsa iure?
-    </p>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab molestiae hic reprehenderit tempora excepturi nesciunt accusamus vero quisquam dignissimos illo a explicabo, consequuntur sunt deserunt dolore minus. Cupiditate, libero.</p>
+    <main>
+        <h1 class="blog-heading">Popular Commands in Git</h1>
+        <p class="blog-author">Author:RamaChandran</p>
+        <section>
+            <h2 class="blog-sub-heading">what is Git?</h2>
+            <p class="blog-content">It is a distributed version control system. It is mainly used to track the changes in the project. Git is created by Linux Torvalds the man behind Linux OS. The main focus of git is to track when the changes are made, by whom the changes are made, and for what reason the changes are made.</p>
+            <p class="blog-content">Some of the git providers are Github, BitBucket, Gitlab, etc. The only difference between the git and git providers are git store the changes in the cloud whereas git providers store it in cloud.Some of the commonly used git commands are
+            </p>
+        </section>
+        <img src="images/blog-hero-image1.jpg" class="blog-image" alt="" width="200">
+        <section>
+            <h2 class="blog-sub-heading">1) git init</h2>
+            <p class="blog-content">This will initialize the git for the project. It will create a file called .git which contains all the history of the project. The "." before the file name represents that it is a hidden file.</p>
+            <div class="blog-syntax-container">
+                <h3 class="blog-topics">Syntax</h3>
+                <code>git init</code>
+            </div>
+        </section>
+        <section>
+            <h2 class="blog-sub-heading">2) git add</h2>
+            <p class="blog-content">This command is used to add the changes to the staging area before committing. The staging area is used to review the changes made by us. The option specify whether you want to stage all the changes or particular file</p>
+            <div class="blog-syntax-container">
+                <h3 class="blog-topics">Syntax</h3>
+                <code>git add options</code>
+            </div>
+        </section>
+        <section>
+            <h2 class="blog-sub-heading">3) git status</h2>
+            <p class="blog-content">This command gives the status such as what are the changes that are needed to be staged and what are the changes that are needed to be committed.</p>
+            <div class="blog-syntax-container">
+                <h3 class="blog-topics">Syntax</h3>
+                <code>git status</code>
+            </div>
+        </section>
+        <section>
+            <h2 class="blog-sub-heading">4) git commit </h2>
+            <p class="blog-content">This command is used to commit the changes which are staged.
+                Giving the appropriate git message is also a good practice like
+            </p>
+            <ul>
+                <li>fix: Fixing the bug</li>
+                <li>feat: adding a new feature</li>
+                <li>test: All the things related to testing</li>
+                <li>docs: All the things related to documentation</li>
+                <li>style: All the things related to styling like color, font family etc</li>
+            </ul>
+            <div class="blog-syntax-container">
+                <h3 class="blog-topics">Syntax</h3>
+                <code>git commit options message</code>
+            </div>
+        </section>
+        <section>
+            <h2 class="blog-sub-heading">5) git push</h2>
+            <p class="blog-content">This is used to push all the changes to GitHub which are committed</p>
+            <div class="blog-syntax-container">
+                <h3 class="blog-topics">Syntax</h3>
+                <code>git push</code>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <h3 class="heading">Social media links</h3>
